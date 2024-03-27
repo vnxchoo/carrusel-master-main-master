@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        /* Estilo para las imágenes del carrusel */
+        .carousel-item img {
+            height: 1000px; /* Altura deseada para las imágenes */
+            width: auto; /* Ancho automático para mantener la proporción */
+            object-fit: cover; /* Ajusta la imagen para cubrir el área */
+        }
+        .carousel-text {
+            position: absolute; /* Posiciona el texto de forma absoluta */
+            bottom: 500px; /* Distancia desde la parte inferior */
+            left: 300px; /* Distancia desde la parte izquierda */
+            color: rgb(253, 93, 0); /* Color del texto */
+            font-size: 100px; /* Tamaño de la fuente */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .carousel-text1 {
+            position: absolute; /* Posiciona el texto de forma absoluta */
+            bottom: 475px; /* Distancia desde la parte inferior */
+            left: 300px; /* Distancia desde la parte izquierda */
+            color: white; /* Color del texto */
+            font-size: 50px; /* Tamaño de la fuente */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-start justify-content-end" style="background-color: #313438;">
+            <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">INICIO</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">NOSOTROS</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="adopta.html" class="btn btn-link text-white">ADOPTA</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">COLABORA</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">SERVICIOS</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">CONTÁCTANOS</a></div>
+        </div>
+    </div>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="lindo-perro-marron-hogar.jpg" class="d-block w-100" alt="Perro en casa">
+            <div class="carousel-text">ADOPTA</div>
+            <div class="carousel-text1">salva una vida</div>
+        </div>
+        <div class="carousel-item">
+            <img src="perro-callejero-local-turco-ojos-tristes-mirando-camara-calle.jpg" class="d-block w-100" alt="Perro en la calle">
+            <div class="carousel-text">ADOPTA</div>
+            <div class="carousel-text1">salva una vida</div>
+        </div>
+        <div class="carousel-item">
+            <img src="lindo-perro-rescate-sentado-junto-adoptarme-firmar.jpg" class="d-block w-100" alt="Mano acariciando a un perro">
+            <div class="carousel-text">ADOPTA</div>
+            <div class="carousel-text1">salva una vida</div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
