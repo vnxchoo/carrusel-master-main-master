@@ -1,0 +1,118 @@
+
+/* PAGINA ADOPTA */
+body {
+    background-image: url('../img/perro2Index.jpg');
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el fondo */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-attachment: fixed; /* Fijar la imagen de fondo */
+    height: 100vh; /* Ajustar la altura del cuerpo al 100% del viewport */
+    margin: 0; /* Eliminar el margen por defecto */
+    padding: 0; /* Eliminar el padding por defecto */
+    position: relative; /* Asegurar que el posicionamiento del texto sea relativo a la imagen de fondo */
+}
+.overlay {
+    position: absolute; /* Posicionamiento absoluto para el contenedor de texto */
+    top: 20%; /* Colocar el contenedor en la mitad superior de la imagen */
+    left: 50%; /* Centrar horizontalmente el contenedor */
+    transform: translate(-50%, -50%); /* Centrar verticalmente el contenedor */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    line-height: 0.2; /* Modificar el interlineado */
+
+}
+.accordion-item {
+    margin-bottom: 20px; /* Espacio entre cada imagen */
+    text-align: center; /* Para centrar el contenido */
+    margin-top: 200px;
+}
+.accordion-item img {
+    max-width: 100%; /* Ajustar imágenes al ancho del contenedor */
+    max-height: 200px; /* Establecer la altura máxima deseada */
+    object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+    transition: transform 0.5s ease; /* Transición suave en la transformación */
+    border-radius: 10px;
+}
+.accordion-item img:hover {
+    transform: scale(1.1); /* Escalar la imagen al pasar el mouse */
+    border-radius: 10px;
+}
+.accordion-content {
+    display: none; /* Ocultar contenido por defecto */
+    padding: 10px; /* Espaciado interno */
+}
+.accordion-item:hover .accordion-content {
+    background-color: rgba(44, 49, 53, 0.7); /* aliceblue con 70% de opacidad */
+    display: block;
+}
+.container {
+    margin-top: 100px; /* Ajustar margen superior para evitar la superposición con el menú superior */
+}
+.adopta-text {
+    color: rgb(253, 93, 0); /* Color del texto */
+    font-size: 100px; /* Tamaño de la fuente */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.adopta-text1 {
+    color: white; /* Color del texto */
+    font-size: 50px; /* Tamaño de la fuente */
+    font-family:cursive;
+}
+.animales-text{
+    font-family:monospace;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.ver-bio{
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    color: white; /* Color del texto */
+
+
+}
+.carousel {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tu preferencia */
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+}
+.modal-dialog {
+    max-height: 90vh; /* Cambiar según sea necesario */
+}
+
+/* Ajuste para que la imagen se ajuste al tamaño de la ventana emergente */
+.carousel-inner > .carousel-item > img {
+    width: 100%;
+    height: auto;
+}
+

@@ -1,0 +1,22 @@
+       /* Estilo para las imágenes del carrusel */
+       .carousel-item img {
+        height: 1000px; /* Altura deseada para las imágenes */
+        width: auto; /* Ancho automático para mantener la proporción */
+        object-fit: cover; /* Ajusta la imagen para cubrir el área */
+    }
+    .carousel-text {
+        position: absolute; /* Posiciona el texto de forma absoluta */
+        bottom: 500px; /* Distancia desde la parte inferior */
+        left: 300px; /* Distancia desde la parte izquierda */
+        color: rgb(253, 93, 0); /* Color del texto */
+        font-size: 100px; /* Tamaño de la fuente */
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .carousel-text1 {
+        position: absolute; /* Posiciona el texto de forma absoluta */
+        bottom: 475px; /* Distancia desde la parte inferior */
+        left: 300px; /* Distancia desde la parte izquierda */
+        color: white; /* Color del texto */
+        font-size: 50px; /* Tamaño de la fuente */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }

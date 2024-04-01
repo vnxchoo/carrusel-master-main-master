@@ -1,82 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <style>
-         body {
-            background-image: url('./perro-callejero-local-turco-ojos-tristes-mirando-camara-calle.jpg');
-            background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el fondo */
-            background-position: center; /* Centrar la imagen de fondo */
-            background-attachment: fixed; /* Fijar la imagen de fondo */
-            height: 100vh; /* Ajustar la altura del cuerpo al 100% del viewport */
-            margin: 0; /* Eliminar el margen por defecto */
-            padding: 0; /* Eliminar el padding por defecto */
-            position: relative; /* Asegurar que el posicionamiento del texto sea relativo a la imagen de fondo */
-        }
-        .overlay {
-            position: absolute; /* Posicionamiento absoluto para el contenedor de texto */
-            top: 20%; /* Colocar el contenedor en la mitad superior de la imagen */
-            left: 50%; /* Centrar horizontalmente el contenedor */
-            transform: translate(-50%, -50%); /* Centrar verticalmente el contenedor */
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
-            color: white; /* Color del texto */
-            padding: 20px; /* Espaciado interno del contenedor */
-            border-radius: 10px; /* Bordes redondeados */
-            text-align: center; /* Centrar el texto */
-            line-height: 0.2; /* Modificar el interlineado */
-
-        }
-        .accordion-item {
-            margin-bottom: 20px; /* Espacio entre cada imagen */
-            text-align: center; /* Para centrar el contenido */
-            margin-top: 200px;
-        }
-        .accordion-item img {
-            max-width: 100%; /* Ajustar imágenes al ancho del contenedor */
-            max-height: 200px; /* Establecer la altura máxima deseada */
-            object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
-            transition: transform 0.5s ease; /* Transición suave en la transformación */
-            border-radius: 10px;
-        }
-        .accordion-item img:hover {
-            transform: scale(1.1); /* Escalar la imagen al pasar el mouse */
-            border-radius: 10px;
-        }
-        .accordion-content {
-            display: none; /* Ocultar contenido por defecto */
-            padding: 10px; /* Espaciado interno */
-        }
-        .accordion-item:hover .accordion-content {
-            background-color: rgba(44, 49, 53, 0.7); /* aliceblue con 70% de opacidad */
-            display: block;
-        }
-        .container {
-            margin-top: 100px; /* Ajustar margen superior para evitar la superposición con el menú superior */
-        }
-        .adopta-text {
-            color: rgb(253, 93, 0); /* Color del texto */
-            font-size: 100px; /* Tamaño de la fuente */
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-        .adopta-text1 {
-            color: white; /* Color del texto */
-            font-size: 50px; /* Tamaño de la fuente */
-            font-family:cursive;
-        }
-        .animales-text{
-            font-family:monospace;
-            font-size: 30px;
-            color: rgb(255, 255, 255);
-        }
-        .ver-bio{
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
-            color: white; /* Color del texto */
-
-
-        }
+    <link rel="stylesheet" href="css/styleadopta.css">
+    <style>        
     </style>
 </head>
 <body>
@@ -86,7 +16,7 @@
     </div>
     <div class="container-fluid">
         <div class="row align-items-start justify-content-end" style="background-color: #313438;">
-            <div class="col-4 col-sm-auto text-right"><a href="carrusel.html" class="btn btn-link text-white">INICIO</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="index.html" class="btn btn-link text-white">INICIO</a></div>
             <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">NOSOTROS</a></div>
             <div class="col-4 col-sm-auto text-right"><a href="adopta.html" class="btn btn-link text-white">ADOPTA</a></div>
             <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">COLABORA</a></div>
@@ -98,80 +28,114 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="accordion-item">
-                    <img src="2ee5f9bb43455be536d54372b58d38c3.jpg" alt="Tusi">
+                    <img src="img/perro1Adopta.jpg" alt="Tusi">
                     <div class="accordion-content">
-                        <p class="animales-text">*Nombre: Tusi</p>
-                        <p class="animales-text">*Edad: 3 años</p>
-                        <p class="animales-text">*Esterilizad@: Si</p>
-                        <p class="animales-text">*Sexo: Femenino</p>
-                        <p class="ver-bio"><a href="#" class="btn-link text-white ver-bio" data-toggle="modal" data-target="#biographyModal" data-biography="Tusi es un perrito abandonado de 3 años, cariñoso y juguetón. Fue rescatado de las calles donde deambulaba solo, buscando comida y refugio. A pesar de su pasado difícil, Tusi se muestra como un compañero leal y fiel. Está esterilizado y completamente vacunado. Ahora, Tusi espera encontrar un hogar amoroso donde pueda compartir su afecto y recibir el cuidado que merece."
-                            data-image="2ee5f9bb43455be536d54372b58d38c3.jpg">Ver biografía</a></p>
+                        <p class="ver-bio">
+                            <a href="#" class="btn-link text-white ver-bio" data-toggle="modal" data-target="#biographyModal" data-biography="<h3>Tusi</h3><h4>-----------------</h4><ul class='list-unstyled'><li><strong>Nombre:</strong> Tusi</li><li><strong>Edad:</strong> 3 años</li><li><strong>Esterilizado:</strong> Sí</li><li><strong>Sexo:</strong> Femenino</li><li><strong>Descripción:</strong> Tusi es un perrito abandonado de 3 años, cariñoso y juguetón. Fue rescatado de las calles donde deambulaba solo, buscando comida y refugio. A pesar de su pasado difícil, Tusi se muestra como un compañero leal y fiel. Está esterilizado y completamente vacunado. Ahora, Tusi espera encontrar un hogar amoroso donde pueda compartir su afecto y recibir el cuidado que merece.</li></ul>" data-image="img/perro1Adopta.jpg">
+                                Ver biografía
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="accordion-item">
-                    <img src="634084e6e7085.jpeg" alt="Kripi">
+                    <img src="img/perro2Adopta.jpeg" alt="Kripi">
                     <div class="accordion-content">
-                        <p class="animales-text">*Nombre: Kripi</p>
-                        <p class="animales-text">*Edad: 7 meses </p>
-                        <p class="animales-text">*Esterilizad@: No</p>
-                        <p class="animales-text">*Sexo: Masculino</p>
-                        <p data-toggle="modal" data-target="#biographyModal" data-biography=""></p>
-                        <p class="ver-bio"><a href="#" class="btn-link text-white ver-bio" data-toggle="modal" data-target="#biographyModal" data-biography="Kripi es un cachorro de 7 meses lleno de energía y vitalidad. Fue encontrado abandonado en una caja junto a sus hermanos, luchando por sobrevivir. Gracias a la atención veterinaria y al cuidado de los rescatistas, Kripi ha crecido sano y fuerte. Aunque aún no está esterilizado, todas sus vacunas están al día. Kripi anhela un hogar donde pueda correr, jugar y recibir el amor incondicional que tiene para ofrecer."
-                            data-image="634084e6e7085.jpeg">Ver biografía</a></p>
+                        <p class="ver-bio">
+                            <a href="#" class="btn-link text-white ver-bio" data-toggle="modal" data-target="#biographyModal" data-biography="<h3>Kripi</h3><h4>-----------------</h4><ul class='list-unstyled'><li><strong>Nombre:</strong> Tusi</li><li><strong>Edad:</strong> 3 años</li><li><strong>Esterilizado:</strong> Sí</li><li><strong>Sexo:</strong> Femenino</li><li><strong>Descripción:</strong> Tusi es un perrito abandonado de 3 años, cariñoso y juguetón. Fue rescatado de las calles donde deambulaba solo, buscando comida y refugio. A pesar de su pasado difícil, Tusi se muestra como un compañero leal y fiel. Está esterilizado y completamente vacunado. Ahora, Tusi espera encontrar un hogar amoroso donde pueda compartir su afecto y recibir el cuidado que merece.</li></ul>" data-image="img/perro2Adopta.jpeg">
+                                Ver biografía
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="accordion-item">
-                    <img src="Captura de pantalla 2024-03-25 195539.png" alt="Owao">
+                    <img src="img/perro3Adopta.png" alt="Owao">
                     <div class="accordion-content">
-                        <p class="animales-text">*Nombre: Owao</p>
-                        <p class="animales-text">*Edad: 2 años</p>
-                        <p class="animales-text">*Esterilizad@: Si</p>
-                        <p class="animales-text">*Sexo: Masculino</p>
-                        <p class="ver-bio"><a href="#" class="btn-link text-white ver-bio" data-toggle="modal" data-target="#biographyModal" data-biography="Owao es un perrito abandonado de 2 años, con todas sus vacunas al dia y esterelizado que fue rescatado de una casa abandonada donde se encontraba desnutrido y sin fuerzas, actualmente Owao se encuentra en perfactas condiciones y listo para una familia que lo llene de amor y cariño 😊."
-                             data-image="https://c.tenor.com/Tj9_uOM1xwoAAAAd/tenor.gif">Ver biografía</a></p>      
-                            
+                        <p class="ver-bio">
+                            <a href="#" class="btn-link text-white ver-bio" data-toggle="modal" data-target="#biographyModal" data-biography="<h3>Owao</h3><h4>-----------------</h4><ul class='list-unstyled'><li><strong>Nombre:</strong> Tusi</li><li><strong>Edad:</strong> 3 años</li><li><strong>Esterilizado:</strong> Sí</li><li><strong>Sexo:</strong> Femenino</li><li><strong>Descripción:</strong> Tusi es un perrito abandonado de 3 años, cariñoso y juguetón. Fue rescatado de las calles donde deambulaba solo, buscando comida y refugio. A pesar de su pasado difícil, Tusi se muestra como un compañero leal y fiel. Está esterilizado y completamente vacunado. Ahora, Tusi espera encontrar un hogar amoroso donde pueda compartir su afecto y recibir el cuidado que merece.</li></ul>" data-image="https://c.tenor.com/Tj9_uOM1xwoAAAAd/tenor.gif">
+                                Ver biografía
+                            </a>
+                        </p>
+                             https://c.tenor.com/Tj9_uOM1xwoAAAAd/tenor.gif
+                                   
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="biographyModal" tabindex="-1" role="dialog" aria-labelledby="biographyModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
+    
+<!-- Ventana emergente -->
+<div class="modal fade" id="biographyModal" tabindex="-1" role="dialog" aria-labelledby="biographyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+        <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="biographyModalLabel">Biografía del animal</h5>
-              <!-- Agrega un botón para cerrar el modal -->
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                <h5 class="modal-title" id="biographyModalLabel">Biografía del animal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
-                <img src="" id="biographyImage" class="img-fluid mb-2" alt="Biografía del animal">
-                <div id="biographyContent"></div>
+                <div id="biographyCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Los elementos del carrusel se agregarán aquí -->
+                    </div>
+                    <a class="carousel-control-prev" href="#biographyCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#biographyCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(document).ready(function() {
-          // Manejar el clic en los botones "Ver biografía"
-          $('.ver-bio').click(function() {
-            // Obtener la biografía del atributo 'data-biography' del botón clicado
-            var biography = $(this).attr('data-biography');
-            // Obtener la URL de la imagen del atributo 'data-image' del botón clicado
-            var imageSrc = $(this).attr('data-image');
-            // Mostrar la biografía en el modal
-            $('#biographyContent').text(biography);
-            // Mostrar la imagen en el modal
-            $('#biographyImage').attr('src', imageSrc);
-          });
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Manejar el clic en los botones "Ver biografía"
+        $('.ver-bio').click(function() {
+            // Vaciar el carrusel antes de agregar nuevos elementos
+            $('#biographyCarousel .carousel-inner').empty();
+
+            // Obtener la información de cada botón "Ver biografía"
+            $('.ver-bio').each(function(index) {
+                var biography = $(this).data('biography');
+                var imageSrc = $(this).data('image');
+                var activeClass = index === 0 ? 'active' : '';
+
+                // Verificar si la biografía está definida
+                if (biography) {
+                    // Crear un nuevo elemento para el carrusel con la imagen y la biografía
+                    var carouselItem = `
+                        <div class="carousel-item ${activeClass}">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="img-container">
+                                    <img src="${imageSrc}" class="img-fluid" alt="Biografía del animal">
+                                </div>
+                                <div class="p-4">
+                                    <p>${biography}</p>
+                                </div>
+                            </div>
+                        </div>`;
+
+                    // Agregar el elemento al carrusel
+                    $('#biographyCarousel .carousel-inner').append(carouselItem);
+                }
+            });
+
+            // Inicializar el carrusel
+            $('#biographyCarousel .carousel-item').first().addClass('active');
+            $('#biographyModal').modal('show');
         });
-      </script>
+    });
+</script>
 </body>
 </html>
