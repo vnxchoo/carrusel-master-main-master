@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylecontacto.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container-fluid">
+        <div class="row align-items-start justify-content-end" style="background-color: #313438;">
+            <div class="col-4 col-sm-auto text-right"><a href="index.html" class="btn btn-link text-white">INICIO</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">NOSOTROS</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="adopta.html" class="btn btn-link text-white">ADOPTA</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">COLABORA</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="#" class="btn btn-link text-white">SERVICIOS</a></div>
+            <div class="col-4 col-sm-auto text-right"><a href="contacto.html" class="btn btn-link text-white">CONTÁCTANOS</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su teléfono">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirmar Contraseña</label>
+                    <input type="password" class="form-control" id="confirm_password" placeholder="Confirme su contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="animal">¿Qué animal desea?</label>
+                    <select class="form-control" id="animal">
+                        <option>Perro</option>
+                        <option>Gato</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>¿Ya tiene animales?</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tiene_animales" id="tiene_animales_si" value="si">
+                        <label class="form-check-label" for="tiene_animales_si">Sí</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tiene_animales" id="tiene_animales_no" value="no">
+                        <label class="form-check-label" for="tiene_animales_no">No</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>

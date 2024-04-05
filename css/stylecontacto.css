@@ -1,0 +1,21 @@
+body {
+ 
+    height: 100vh; /* Ajustar la altura del cuerpo al 100% del viewport */
+    margin: 0; /* Eliminar el margen por defecto */
+    padding: 0; /* Eliminar el padding por defecto */
+    position: relative; /* Asegurar que el posicionamiento del texto sea relativo a la imagen de fondo */
+    
+}
+body .background-overlay {
+    background-image: url('../img/perro3Index.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5; /* Cambia este valor para ajustar la opacidad */
+}
